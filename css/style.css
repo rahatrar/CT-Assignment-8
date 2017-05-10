@@ -1,0 +1,523 @@
+ @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+*{
+    box-sizing: border-box;   
+}
+
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#header-section {
+    background-color: #87509C;
+    min-height: 100vh;
+    position: relative;
+}
+
+.hader-s {
+    padding-top: 25px;
+}
+
+.logo {
+    width: 15%;
+    float: left;
+}
+
+nav {
+    width: 85%;
+    float: left;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 17px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #3e254b;
+    color: #fff;
+    
+}
+
+.slider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 1100px;
+    text-align: center;
+}
+
+.slider h1 {
+    margin: 0;
+    font-size: 45px;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0 auto 20px;
+}
+
+.slider a {
+    background-color: #eb7d4b;
+    padding: 20px 85px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #c86a40;
+}
+
+.slider a:hover {
+    background-color: #c86a40;
+    box-shadow: 0 5px 0 #eb7d4b;
+}
+
+.slider a:focus {
+    background-color: #c86a40;
+    box-shadow: 0 0px 0 #c86a40;
+}
+
+#service-section {
+    background-color: #17c2a4;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom:  45px;
+}
+
+.heading h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    position: relative;
+    
+}
+
+.heading h1:after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 5px;
+    background-color:#4b4a4a;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%) scale(0);
+    transition: all 0.5s ease-in-out;
+}
+
+#service-section:hover .heading h1:after,
+#team-section:hover .heading h1:after,
+#skills-section:hover .heading h1:after,
+#portfolio-section:hover .heading h1:after,
+#about-section:hover .heading h1:after,
+#contact-section:hover .heading h1:after{
+    transform: translateX(50%) scale(1);
+}
+
+.heading p {
+    max-width: 53%;
+    font-size: 18px;
+    margin: 10px auto;
+    font-weight: 500;
+}
+
+.one-four {
+    width: 25%;
+    float: left;
+}
+
+.service {
+    text-align: center;
+}
+
+.service img {
+    margin: 0 auto;
+}
+
+.service h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 50px 0 25px 0;
+    margin: 0;
+}
+
+.service p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#team-section {
+    background-color: #e7f1f8;
+    min-height: 100vh;
+    color: #3c4761;
+    padding-top: 100px;
+    padding-bottom:50px;
+}
+
+.team {
+    text-align: center;
+}
+
+.team img {
+    margin: 0 auto;
+}
+
+.team h2 {
+    color: #27283d;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 50px 0 5px 0;
+}
+
+.team span {
+    font-size: 16px;
+    color: #30bae7;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.team p {
+    font-size: 16px;
+    color: #535e75;
+    margin: 25px 0 0 0;
+}
+
+.team ul {
+    padding: 35px 0 0 0;
+}
+.team ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.team ul li a {
+    text-decoration: none;
+    display: block;
+    background-color: #bdd1df;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.fa-facebook:hover {
+    color: #454C94;
+}
+
+.fa-twitter:hover {
+    color: #2096CF;
+}
+
+.fa-google-plus:hover {
+    color:red;
+}
+
+.fa-linkedin:hover {
+    color: #4F67B2;
+}
+
+#skills-section {
+    color: #3c4761;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skill-box {
+    position: relative;
+}
+
+.skill-box img {
+    margin: 0 auto;
+}
+
+.skill-box span {
+    font-size: 50px;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+#portfolio-section {
+    background-color: #ffdd99;
+    min-height: 100vh;
+	padding-top: 100px;
+    padding-bottom: 50px;
+    color: #393939;
+    text-align: center;
+}
+
+.portfolio-list {
+    text-align: center;
+    padding: 0 0 65px 0;
+}
+
+.portfolio-list li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.portfolio-list li a {
+    text-decoration: none;
+    display: block;
+    padding: 7px 30px;
+    text-transform: uppercase;
+    color: #393939;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ebc985;
+    border-radius: 3px;
+}
+
+.portfolio-list li a:hover{
+    background-color: #ffffff;
+}
+
+.one-two {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#portfolio-section .one-two {
+    margin: 0 0 64px 0;
+    
+}
+
+
+#portfolio-section .one-two h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px 0 0 0;
+}
+
+.load {
+    background-color: #17c2a4;
+    padding: 20px 85px;
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #14a58c;
+    margin: 0 0 10px 0;    
+}
+
+.load:hover {
+    background-color: #14a58c;
+    box-shadow: 0 5px 0 #17c2a4;
+}
+
+.load:focus {
+    background-color: #14a58c;
+    box-shadow: 0 0px 0 #17c2a4;
+}
+
+
+#about-section {
+    background-color: #d74680;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    
+}
+
+#about-section .one-two img {
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+#about-section .one-two {
+        margin: 0px 0 50px 0;
+}
+
+.about-content {
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+.about-content p {
+    margin: 0;
+    font-size: 21px;
+    font-style: italic;
+}
+
+.about-content h5 {
+    margin: 25px 0 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-content span {
+    color: #ffdd99;
+    font-size: 18px;
+}
+
+#contact-section {
+    background-color: #3c5499;
+    min-height: 100vh;
+    padding-top:100px;
+    padding-bottom: 50px;
+}
+
+#contact-section .heading p {
+    max-width: 100%;
+}
+
+.contact-box {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-box input::placeholder,
+.contact-box textarea::placeholder
+ {
+    color: #ffffff;
+}
+
+.input {
+    width: 50%;
+    float: left;
+    padding: 10px;
+
+}
+
+.contact-box input[type="text"],
+.contact-box input[type="email"]{
+    font-size: 18px;
+    color: #fff;
+    background-color: #273a71;
+    font-weight: 600;
+    border: 0;
+    padding: 10px 184px 10px 25px;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.box {
+    padding: 10px;
+    margin: 50px 0 0 0;
+}
+
+.contact-box .box textarea{
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #273a71;
+    font-weight: 600;
+    border: 0;
+    width: 890px;
+    padding: 10px 0 0 25px;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.contact-box input[type="submit"] {
+    background-color: #30bae7;
+    box-shadow: 0 5px 0 #299ec5;
+    border: 0;
+}
+
+.contact-box .box input:hover {
+    background-color: #299ec5;
+    box-shadow: 0 5px 0 #30bae7;
+}
+
+.contact-box .box input:focus {
+    background-color: #299ec5;
+    box-shadow: 0 0px 0 #30bae7;
+}
+
+#footer {
+    background-color: #344b8e;
+    padding: 25px 0;
+}
+
+#footer ul{
+    text-align: center;
+}
+
+#footer ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px 0 20px;
+}
+
+#footer ul li a{
+    text-decoration: none;
+    display: block;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#footer ul li a:hover {
+    color: #000;
+    
+}
+
+
+
+
